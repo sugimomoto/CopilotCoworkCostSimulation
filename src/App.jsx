@@ -114,6 +114,16 @@ export default function App() {
   return (
     <div style={{ fontFamily: "var(--font-sans, sans-serif)", maxWidth: 720, margin: "0 auto", padding: "1rem 0" }}>
 
+      {/* ヘッダー */}
+      <header style={{ padding: "0 0.5rem", marginBottom: "1.25rem" }}>
+        <h1 style={{ fontSize: 22, fontWeight: 600, margin: 0 }}>
+          Copilot Cowork Cost Simulation
+        </h1>
+        <p style={{ fontSize: 12, color: "var(--color-text-secondary, #888)", margin: "4px 0 0" }}>
+          Microsoft Copilot Cowork のクレジット利用コストを試算する非公式ツール
+        </p>
+      </header>
+
       {/* Step 1 */}
       <Section step={1} title="Coworkを利用するユーザー数を入力してください">
         <div style={{ display: "grid", gridTemplateColumns: "1fr 80px 120px", gap: 8, marginBottom: 6 }}>
